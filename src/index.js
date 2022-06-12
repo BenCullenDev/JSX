@@ -2,8 +2,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 // Create a React Component
+
+function getButtonText() {
+    return 'Click this button!'
+}
+
 const App = () => {
-    return <div>Hi there!</div>;
+   
+    return (
+        <div>
+        <label className="label" for="name">Enter Name:</label>
+        <input id="name" type="text"/>
+        <button style={{backgroundColor: 'blue', color: 'white' }}>{getButtonText()}</button>
+    </div>
+    );
 };
 
 // Take the React Component and display it on the screen
